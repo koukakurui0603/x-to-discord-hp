@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xタイムライン表示サンプル</title>
+    <link rel="stylesheet" href="x_timeline.css">
+</head>
+<body>
+
+    <section class="xtl-wrapper">
+        <div class="xtl-header">
+            <h2 class="xtl-title">TWEET（最新50件）</h2>
+            <button type="button" id="refresh-tweets-btn" class="xtl-refresh-btn">🔄 更新</button>
+        </div>
+
+        <div class="xtl-scroll-box" id="tweet-list">
+            <div class="xtl-loading">読み込み中です...</div>
+        </div>
+
+        <div class="xtl-footer">
+            <!-- ★ ご自身のXアカウントURLに変更してください -->
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="xtl-more-btn">
+                続きは X で見る ↗
+            </a>
+        </div>
+    </section>
+
+    <script src="x_timeline.js"></script>
+</body>
+</html>

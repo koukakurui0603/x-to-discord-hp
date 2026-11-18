@@ -1,0 +1,178 @@
+/* Xタイムライン風スクロール枠のスタイル */
+.xtl-wrapper {
+    max-width: 680px;
+    margin: 24px auto;
+    padding: 16px;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+    color: #222222;
+}
+
+.xtl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.xtl-title {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.xtl-refresh-btn {
+    background: #ffffff;
+    border: 1.5px solid #ff8fb8;
+    color: #d95d8a;
+    border-radius: 999px;
+    padding: 5px 14px;
+    font-size: 0.82rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.xtl-refresh-btn:hover {
+    background: #fff5f9;
+}
+
+.xtl-scroll-box {
+    height: 460px;
+    overflow-y: auto;
+    border: 2px solid #ffb6d2;
+    border-radius: 14px;
+    background: #ffffff;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.xtl-loading, .xtl-notice {
+    text-align: center;
+    padding: 12px;
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+.xtl-notice {
+    color: #d95d8a;
+    background: #fff5f9;
+    border-radius: 8px;
+}
+
+.xtl-item {
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 12px 14px;
+    background: #ffffff;
+}
+
+.xtl-repost-label {
+    font-size: 0.78rem;
+    font-weight: bold;
+    color: #666666;
+    margin-bottom: 6px;
+}
+
+.xtl-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.xtl-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #eeeeee;
+    flex-shrink: 0;
+}
+
+.xtl-author-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
+}
+
+.xtl-name {
+    font-weight: bold;
+    font-size: 0.92rem;
+}
+
+.xtl-handle {
+    font-size: 0.78rem;
+    color: #666666;
+}
+
+.xtl-date {
+    font-size: 0.76rem;
+    color: #666666;
+    white-space: nowrap;
+}
+
+.xtl-body {
+    font-size: 0.93rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-bottom: 8px;
+    line-height: 1.65;
+}
+
+.xtl-quote {
+    border-left: 3px solid #ff8fb8;
+    background: #fff5f9;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.84rem;
+    margin-bottom: 8px;
+}
+
+.xtl-quote-author {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.xtl-media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.xtl-media-img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+    display: block;
+}
+
+.xtl-ext-link {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #1a5cff;
+    text-decoration: none;
+}
+
+.xtl-ext-link:hover {
+    text-decoration: underline;
+}
+
+.xtl-footer {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.xtl-more-btn {
+    display: inline-block;
+    background: #ff8fb8;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 9px 22px;
+    border-radius: 999px;
+}
